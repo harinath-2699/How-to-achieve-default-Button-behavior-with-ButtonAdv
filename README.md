@@ -7,3 +7,7 @@ WPF’s standard Button supports default and cancel behavior via IsDefault and I
 * Simulate IsDefault (Enter) and IsCancel (Escape) for ButtonAdv
 * Keep keyboard shortcuts consistent with standard WPF Button behavior
 * A simple and non-invasive pattern that works alongside your existing UI
+* Handle key input at the window level before focused controls process it
+* Invoke the appropriate ButtonAdv action when the user presses Enter or Escape
+
+This approach is useful for dialog-style windows and forms where keyboard accessibility and expected WPF interaction behavior are important.
